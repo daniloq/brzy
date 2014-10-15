@@ -1,27 +1,28 @@
 %section.main-hero
-  %nav.main-nav
-    %dl
-      %dd
-        .logo
-          = image_tag "nimble.svg"
-      %dd
-        %ul
-          %li
-            %a{href: ""} Sign in
-          %li
-            %a.btn{href: ""}
-              Demo
-  %article
-    %h1.wow.fadeInDown
-      Effortless Collaborative
-      %br
-      Hiring
-    %h3.wow.fadeInLeft{"data-wow-delay" => "1s"}
-      Morbi vulputate sagittis sapien, ut
-      %br
-      viverra tortor sagittis vitae.
-    %form.wow.fadeInRight{"data-wow-delay" => "1s"}
-      %input{type: "submit", value: "Request a Demo"}
+  .overlay
+    %nav.main-nav
+      %dl
+        %dd
+          .logo
+            = image_tag "nimble.svg"
+        %dd
+          %ul
+            %li
+              %a{href: ""} Sign in
+            %li
+              %a.btn{href: ""}
+                Demo
+    %article
+      %h1.wow.fadeInDown
+        Effortless Collaborative
+        %br
+        Hiring
+      %h3.wow.fadeInLeft{"data-wow-delay" => "1s"}
+        Morbi vulputate sagittis sapien, ut
+        %br
+        viverra tortor sagittis vitae.
+      %form.wow.fadeInRight{"data-wow-delay" => "1s"}
+        %input{type: "submit", value: "Request a Demo"}
 
 %section.features
   %article
@@ -31,12 +32,18 @@
       %dd.wow.fadeInRight
         %h3 Organize Candidates Visually
         %p Nimble’s unique, visual approach to managing the candidate pipeline is super fast, more productive and yes, even fun. Drag and drop candidate cards between lists to move them through the hiring process and trigger the right workflows (e.g. interview scheduling, rejecting, make an offer). It may be from the future.
-    %dl
+    %dl.show-large
       %dd.wow.fadeInLeft
         %h3 Social Hiring
         %p Hiring isn’t a solo operation. With Nimble, teams can vote, share feedback, documents and have a conversation, all in real-time. Features like @mentions and #hashtags make it easy to get the right people involved and keep the conversation organized.
       %dd.wow.fadeInRight
         = image_tag "illustration-2.png"
+    %dl.show-small
+      %dd.wow.fadeInRight
+        = image_tag "illustration-2.png"
+      %dd.wow.fadeInLeft
+        %h3 Social Hiring
+        %p Hiring isn’t a solo operation. With Nimble, teams can vote, share feedback, documents and have a conversation, all in real-time. Features like @mentions and #hashtags make it easy to get the right people involved and keep the conversation organized.
     %dl
       %dd.wow.fadeInLeft
         = image_tag "illustration-3.png"
@@ -45,11 +52,12 @@
         %p Forget email. Nimble’s real-time messaging let’s you start a conversation with a candidate in seconds. Like them? Jump to a group video interview with a click.
 
 %section.hero
-  %article
-    %dl
-      %dd
-        %h3 In the office or on the go
-        %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
+  .overlay
+    %article
+      %dl
+        %dd
+          %h3 In the office or on the go
+          %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
 
 %section.plugins
   %article

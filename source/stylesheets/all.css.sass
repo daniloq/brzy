@@ -35,6 +35,16 @@ article
   +media($tablet)
     padding: 0 1rem
 
+.overlay
+  background: rgba(0,0,0,0)
+  +media($tablet)
+    height: 100%
+    position: relative
+    top: 0
+    bottom: 0
+    +clearfix
+    background: rgba(0,0,0,0.3)
+
 .main-nav
   padding-top: 1.875rem
   a
@@ -79,7 +89,6 @@ article
   background-image: url(../images/hero.jpg)
   background-position: top center
   color: white
-  padding-bottom: 10rem
   +cover
   +media($tablet)
     background-position: 80% 100%
@@ -88,6 +97,8 @@ article
   h3
     margin: 0 0 2rem
     color: rgba(255,255,255,0.8)
+  input[type="submit"]
+    margin-bottom: 10rem
 
 .features
   padding: 6rem 0 0 0
@@ -96,6 +107,14 @@ article
     padding: 0
     +span-columns(10)
     +shift(1)
+    &.show-large
+      display: block
+      +media($tablet)
+        display: none
+    &.show-small
+      display: none
+      +media($tablet)
+        display: block
     dd
       +span-columns(6)
       +media($tablet)
