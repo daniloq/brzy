@@ -1,21 +1,22 @@
-%nav.main-nav
-  %dl
-    %dd
-      nimble
-    %dd
-      %ul
-        %li
-          %a{href: ""} Signin
-        %li
-          %a{href: ""} Demo
-
 %section.main-hero
+  %nav.main-nav
+    %dl
+      %dd
+        .logo
+          = image_tag "nimble.svg"
+      %dd
+        %ul
+          %li
+            %a{href: ""} Sign in
+          %li
+            %a.btn{href: ""}
+              Demo
   %article
     %h1
       Effortless Collaborative
       %br
       Hiring
-    %h4
+    %h3
       Morbi vulputate sagittis sapien, ut
       %br
       viverra tortor sagittis vitae.
@@ -26,41 +27,44 @@
   %article
     %dl
       %dd
-        = image_tag "http://placehold.it/400x350"
+        = image_tag "illustration-1.png"
       %dd
         %h3 Organize Candidates Visually
-        %h4 Nimble’s unique, visual approach to managing the candidate pipeline is super fast, more productive and yes, even fun. Drag and drop candidate cards between lists to move them through the hiring process and trigger the right workflows (e.g. interview scheduling, rejecting, make an offer). It may be from the future.
+        %p Nimble’s unique, visual approach to managing the candidate pipeline is super fast, more productive and yes, even fun. Drag and drop candidate cards between lists to move them through the hiring process and trigger the right workflows (e.g. interview scheduling, rejecting, make an offer). It may be from the future.
     %dl
       %dd
         %h3 Social Hiring
-        %h4 Hiring isn’t a solo operation. With Nimble, teams can vote, share feedback, documents and have a conversation, all in real-time. Features like @mentions and #hashtags make it easy to get the right people involved and keep the conversation organized.
+        %p Hiring isn’t a solo operation. With Nimble, teams can vote, share feedback, documents and have a conversation, all in real-time. Features like @mentions and #hashtags make it easy to get the right people involved and keep the conversation organized.
       %dd
-        = image_tag "http://placehold.it/400x350"
+        = image_tag "illustration-2.png"
     %dl
       %dd
-        = image_tag "http://placehold.it/400x350"
+        = image_tag "illustration-3.png"
       %dd
         %h3 Interview In Real-time
-        %h4 Forget email. Nimble’s real-time messaging let’s you start a conversation with a candidate in seconds. Like them? Jump to a group video interview with a click.
+        %p Forget email. Nimble’s real-time messaging let’s you start a conversation with a candidate in seconds. Like them? Jump to a group video interview with a click.
 
 %section.hero
   %article
     %dl
       %dd
-        %h2 In the office or on the go
-        %h4 Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
+        %h3 In the office or on the go
+        %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
 
 %section.plugins
   %article
     %h2 Integrated with the Modern Workspace
-    %h4 Integrations with services like Slack, Dropbox, Google Apps save you and your team time by bringing Nimble to where you already are.
+    %h4
+      Integrations with services like Slack, Dropbox, Google Apps save you
+      %br
+      and your team time by bringing Nimble to where you already are.
     %ul
       %li
-        = image_tag "http://placehold.it/210x70"
+        = image_tag "slack-logo.png"
       %li
-        = image_tag "http://placehold.it/210x70"
+        = image_tag "dropbox-logo.png"
       %li
-        = image_tag "http://placehold.it/210x70"
+        = image_tag "hipchat-logo.png"
 
 %section.callout
   %article
@@ -69,18 +73,18 @@
       Want to get early access to Nimble HR? We’re accepting
       %br
       limited amounts of companies now.
-    %a{href: "#"} Request a Demo
+    %a.button{href: "#"} Request a Demo
 
 %footer.footer
   %article
-    %p  &#169; 2014 Nimble Hr.
     %ul
       %li
         %a{href: "https://angel.co/nimble-hr", target: "_blank"}
-          Angel
+          = image_tag "icon-angelist.svg"
       %li
         %a{href: "https://www.facebook.com/nimblehr", target: "_blank"}
-          Facebook
+          = image_tag "icon-fb.svg"
       %li
         %a{href: "https://twitter.com/nimble_hr", target: "_blank"}
-          Twitter
+          = image_tag "icon-twitter.svg"
+    %p  &#169; 2014 Nimble Hr.

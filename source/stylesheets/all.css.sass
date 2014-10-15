@@ -1,5 +1,155 @@
 @charset "utf-8"
 
+@import "settings"
 @import "bourbon"
 @import "base/base"
 @import "neat"
+
+h1
+  font:
+    weight: 400
+    size: 3.125rem
+
+h3
+  font:
+    weight: 400
+    size: 1.5rem
+  line-height: 2.5rem
+h4
+  font:
+    weight: 300
+    size: 1.375rem
+  line-height: 1.875rem
+
+article
+  +outer-container
+
+.main-nav
+  padding-top: 1.875rem
+  a
+    color: rgba(255,255,255,0.8)
+    text-transform: uppercase
+    display: inline-block
+    font-size: 0.9rem
+    &.btn
+      background-color: rgba(255,255,255,0.2)
+      display: block
+      padding: 0.15rem 0.8rem
+      border-radius: 6px
+      &:hover
+        background-color: rgba(255,255,255,0.4)
+    &:hover
+      color: white
+  dl
+    margin: 0
+    padding: 0
+    +outer-container
+  dd
+    margin: 0
+    padding: 0
+    +span-columns(6)
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    float: right
+    li
+      display: inline-block
+      margin-left: 2rem
+
+.logo
+  width: 6.25rem
+
+.main-hero
+  background-image: url(../images/hero.jpg)
+  background-position: top center
+  color: white
+  padding-bottom: 10rem
+  +cover
+  h1
+    margin: 5rem 0 .7rem
+  h3
+    margin: 0 0 2rem
+    color: rgba(255,255,255,0.8)
+
+.features
+  padding: 6rem 0 0 0
+  dl
+    margin: 0 0 4rem 0
+    padding: 0
+    +span-columns(10)
+    +shift(1)
+    dd
+      +span-columns(6)
+      img
+        width: 90%
+  h3
+    margin: 2rem 0 .8rem
+  p
+    color: $medium-gray
+    line-height: 2rem
+
+.hero
+  background-image: url(../images/subhero.jpg)
+  background-position: top center
+  color: white
+  height: 30rem
+  +cover
+  dl
+    margin: 0
+    padding: 8rem 0 0 0
+    dd
+      +span-columns(5)
+      +shift(1)
+  h3
+    margin-bottom: .8rem
+
+.plugins
+  padding: 6rem
+  text-align: center
+  h2
+    font:
+      size: 3.125rem
+      weight: 400
+  h4
+    margin: 1rem 0 2rem
+    color: $medium-gray
+  ul
+    margin: 3rem 0 0 0
+    padding: 0
+    list-style: none
+    li
+      display: inline-block
+      margin: 0 3rem
+      img
+        width: 12rem
+        opacity: 0.2
+
+.callout
+  background-image: url(../images/illustration-bg.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-color: $light-gray
+  text-align: center
+  padding: 7rem 0
+  border-top: 1px solid darken($light-gray, 10%)
+  border-bottom: 1px solid darken($light-gray, 10%)
+  h2
+    font:
+      size: 3.125rem
+      weight: 400
+  h4
+    margin: 1rem 0 2rem
+    color: $medium-gray
+
+
+.footer
+  text-align: center
+  color: lighten($medium-gray, 12%)
+  padding: 2rem
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      display: inline-block
