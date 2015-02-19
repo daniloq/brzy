@@ -69,7 +69,7 @@
 
 %section.single-feature.phone
   %article
-    %h3 Post to over 2000+ job boards with a click
+    %h3 Customizable jobs page
     %p Curabitur quis leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
     %ul
       %li Curabitur quis leo ut lectus consectetur
@@ -79,37 +79,55 @@
     %figure
       = image_tag "iphone.svg"
 
+%section.testimonals
+  %article
+    %h3 What are users say about us
+    %p Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg"
+      %li
+        %span Michael Cera
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg"
+      %li
+        %span Jesscia Hughes
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg"
+      %li
+        %span Kimberly Johnson
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+
+%section.hiring
+  .container
+    %article
+      %h5 We’re hiring. Help us reinvent how modern businesses grow amazing teams.
+      %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium
+    %aside
+      = link_to "Apply", "#", class: "button secondary"
+
+
 %section.hero
   .overlay
     %article
       %dl
         %dd
-          %h3 In the office or on the go
+          %h3 Some new headline
           %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
-
-%section.plugins
-  %article
-    %h2 Integrated with the Modern Workspace
-    %h4
-      Integrations with services like Slack, Dropbox, Google Apps save you
-      %br
-      and your team time by bringing Nimble to where you already are.
-    %ul
-      %li
-        = image_tag "slack-logo.png"
-      %li
-        = image_tag "dropbox-logo.png"
-      %li
-        = image_tag "hipchat-logo.png"
-
-%section.callout
-  %article
-    %h2 Start Hiring Simply
-    %h4
-      Want to get early access to Nimble HR? We’re accepting
-      %br
-      limited amounts of companies now.
-    %a.button.wow.fadeInDown{href: "#"} Request a Demo
+          = link_to "Get Start", "#", class: "button"
 
 %footer.footer
   %article

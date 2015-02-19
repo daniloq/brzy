@@ -9,3 +9,8 @@ input[type="submit"]
 
 .button
   @extend button
+  &.secondary
+    background-color: $blue
+    border-color: $dark-blue
+    &:hover
+      background-color: darken($blue, 5%)

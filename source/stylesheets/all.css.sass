@@ -15,9 +15,10 @@ h1
 
 h3
   font:
-    weight: 400
-    size: 1.5rem
-  line-height: 2.5rem
+    weight: 300
+    size: 36px
+  line-height: 46px
+  margin-bottom: 20px
   +media($tablet)
     font-size: 1.2rem
 
@@ -30,11 +31,24 @@ h4
   line-height: 1.875rem
   color: $dark-gray
 
+h5
+  font:
+    size: 20px
+    weight: 300
+  color: white
+
+p
+  font:
+    size: 20px
+    weight: 300
+  line-height: 31px
+  color: $medium-gray
+
 br
   +media($tablet)
     display: none
 
-article
+article, .container
   +outer-container
   +media($tablet)
     padding: 0 1rem
@@ -103,12 +117,11 @@ article
   input[type="submit"]
     margin-bottom: 5rem
 
-
 .features
-  padding: 9rem 0 4rem 0
+  padding: 6rem 0 3rem 0
   box-sizing: border-box
   dl
-    margin: 0 0 7rem 0
+    margin: 0 0 3rem 0
     padding: 0
     +clearfix
     dd
@@ -140,20 +153,33 @@ article
             color: $dark-blue
 
 .single-feature
-  padding: 9rem 0 4rem 0
+  padding: 6rem 0 0 0
   box-sizing: border-box
+  width: 100%
+  ul
+    font:
+      size: 14px
+      weight: 300
+    line-height: 31px
+    color: $medium-gray
+    list-style: disc
+    margin-left: 18px
   &.phone
     +outer-container
     article, aside
       +span-columns(6)
     article
-      padding-right: 60px
+      padding: 5rem 5rem 0 0
       box-sizing: border-box
+    aside
+      line-height: 0
   &.mac
+    border-top: 1px solid $light-gray
+    border-bottom: 1px solid $light-gray
     article
       height: 476px
       .content
-        padding-left: 60px
+        padding: 5rem 0 0 5rem
         box-sizing: border-box
         +span-columns(6)
         +shift(6)
@@ -163,25 +189,95 @@ article
         position: absolute
         right: 51%
 
+.testimonals
+  background: $nude
+  padding: 6em 0
+  box-sizing: border-box
+  h3, p
+    text-align: center
+  h3
+    margin-bottom: 10px
+  p
+    margin-bottom: 45px
+  ul
+    padding: 4em 1.5em
+    box-sizing: border-box
+    text-align: center
+    background: white
+    border-radius: 6px
+    +dropshadow
+    +span-columns(4)
+    li
+      font:
+        size: 14px
+        weight: 300
+      line-height: 22px
+      color: $medium-gray
+      img
+        border-radius: 50%
+        height: 96px
+        margin-bottom: 20px
+      a
+        color: $blue
+        margin-bottom: 20px
+        display: block
+        &:hover
+          color: $dark-blue
+      span
+        font:
+          size: 24px
+          weight: 300
+        color: $dark-gray
+        margin-bottom: 8px
+        display: block
 
+.hiring
+  padding: 4rem 0
+  background: $dark-gray
+  +clearfix
+  article
+    h5
+      margin-bottom: 20px
+    p
+      font-size: 14px
+      line-height: 22px
+    +span-columns(9)
+    +media($tablet)
+      +span-columns(12)
+  aside
+    .button
+      width: 100%
+      text-align: center
+    +span-columns(3)
+    +media($tablet)
+      +span-columns(12)
 
 .hero
-  background-image: url(../images/subhero.jpg)
+  background-image: url(../images/girl-tablet.jpg)
   background-position: top center
   color: white
-  height: 30rem
+  height: 38rem
   +cover
   dl
     margin: 0
     padding: 8rem 0 0 0
     dd
       +span-columns(5)
-      +shift(1)
+      +shift(7)
       +media($tablet)
         +span-columns(12)
         +shift(0)
   h3
     margin-bottom: .8rem
+  p
+    font-size: 14px
+    line-height: 22px
+    margin-bottom: 0
+    color: white
+  button
+    margin-top: 3rem
+    width: 100%
+    text-align: center
 
 .plugins
   padding: 6rem 0
@@ -208,26 +304,6 @@ article
       img
         width: 12rem
         opacity: 0.2
-
-.callout
-  background-image: url(../images/illustration-bg.png)
-  background-repeat: no-repeat
-  background-position: center
-  background-color: $light-gray
-  text-align: center
-  padding: 7rem 0
-  border-top: 1px solid darken($light-gray, 10%)
-  border-bottom: 1px solid darken($light-gray, 10%)
-  h2
-    font:
-      size: 3.125rem
-      weight: 400
-    +media($tablet)
-      font-size: 2rem
-  h4
-    margin: 1rem 0 2rem
-    color: $medium-gray
-
 
 .footer
   text-align: center

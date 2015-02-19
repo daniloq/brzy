@@ -11,6 +11,7 @@ $yellow: #FAD162
 $red: #F7634B
 $medium-gray: #9B9B9B
 $light-gray: #EBECED
+$nude: #DFDFD5
 
 // Mixins
 @mixin cover
@@ -19,3 +20,15 @@ $light-gray: #EBECED
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
+
+@mixin dropshadow
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10)
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10)
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10)
+
+@mixin vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
