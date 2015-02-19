@@ -5,6 +5,7 @@
 @import "base/base"
 @import "neat"
 
+
 h1
   font:
     weight: 300
@@ -104,9 +105,10 @@ article
 
 
 .features
-  padding: 9rem 0 5rem 0
+  padding: 9rem 0 4rem 0
+  box-sizing: border-box
   dl
-    margin: 0 0 4rem 0
+    margin: 0 0 7rem 0
     padding: 0
     +clearfix
     dd
@@ -118,13 +120,50 @@ article
       +span-columns(4)
       +media($tablet)
         +span-columns(12)
+      header
+        line-height: 63px
+        h4
+          display: inline-block
+        i.md
+          margin-right: 8px
+          &.md-filter-hdr
+            color: $purple
+          &.md-account-child
+            color: $green
+          &.md-today
+            color: $red
+          &.md-speaker-notes
+            color: $blue
+          &.md-group-add
+            color: $yellow
+          &.md-gesture
+            color: $dark-blue
+
+.single-feature
+  padding: 9rem 0 4rem 0
+  box-sizing: border-box
+  &.phone
+    +outer-container
+    article, aside
+      +span-columns(6)
+    article
+      padding-right: 60px
+      box-sizing: border-box
+  &.mac
+    article
+      height: 476px
+      .content
+        padding-left: 60px
+        box-sizing: border-box
+        +span-columns(6)
+        +shift(6)
+    aside
+      +clearfix
       img
-        width: 90%
-  h3
-    margin: 2rem 0 .8rem
-  p
-    color: $medium-gray
-    line-height: 2rem
+        position: absolute
+        right: 51%
+
+
 
 .hero
   background-image: url(../images/subhero.jpg)

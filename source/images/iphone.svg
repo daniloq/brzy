@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="477px" height="605px" viewBox="0 0 477 605" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>iphone 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.149885865" y="0" width="660.660605" height="657.313512"></rect>
+        <rect id="path-3" x="0.123160144" y="0.879142566" width="419.352455" height="736.479112"></rect>
+    </defs>
+    <g id="v2-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-768.000000, -1802.000000)">
+            <g id="iphone-2" sketch:type="MSLayerGroup" transform="translate(663.060309, 1749.686488)">
+                <mask id="mask-2" sketch:name="Rectangle 40" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-40" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <rect id="Rectangle-7" opacity="0.2" fill="#4A4A4A" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="105.047567" y="53.0907067" width="476.536881" height="1015.04375" rx="35"></rect>
+                <g id="Rectangle-8-+-Bitmap-2" mask="url(#mask-2)">
+                    <g transform="translate(135.422768, 193.401860)">
+                        <mask id="mask-4" sketch:name="Rectangle 8" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Rectangle-8" stroke="none" fill="#4A4A4A" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+                <path d="M345.222155,1037.60683 C366.27688,1037.60683 383.345106,1020.52222 383.345106,999.447286 C383.345106,978.372354 366.27688,961.287746 345.222155,961.287746 C324.167431,961.287746 307.099205,978.372354 307.099205,999.447286 C307.099205,1020.52222 324.167431,1037.60683 345.222155,1037.60683 Z M312.826266,133.22574 C307.557825,133.22574 303.28691,137.495733 303.28691,142.765625 C303.28691,148.034357 307.561365,152.305509 312.826266,152.305509 L377.618045,152.305509 C382.886486,152.305509 387.157401,148.035516 387.157401,142.765625 C387.157401,137.496892 382.882945,133.22574 377.618045,133.22574 L312.826266,133.22574 Z" id="Oval-8" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <ellipse id="Oval-9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="345.222155" cy="102.698108" rx="7.62459009" ry="7.6319079"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
