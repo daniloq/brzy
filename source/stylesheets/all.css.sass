@@ -111,16 +111,161 @@ article, .container
   h1
     margin: 5rem 0 2rem
   figure
-    margin-bottom: -0.41rem
+    // margin-bottom: -0.41rem
+    position: relative
+    height: 65vh
+    // max-height: 483px
     img
-      max-width: 55rem
-      width: 65vw
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      &.dashboard-img
+        width: 91%
+        left: 2px
+        top: 51px
   input[type="submit"]
     margin-bottom: 5rem
+
+.feedback-img
+  background: url(/images/feedback-hover.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 259px
+  height: 531px
+  left: 572px
+  top: 166px
+  opacity: 0
+  /* make things invisible upon start
+  -webkit-animation: fadeIn ease-in 1
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  animation-duration: 1s
+
+.candidates-img
+  background: url(/images/candidates.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 244px
+  height: 348px
+  left: 582px
+  top: 212px
+  -webkit-animation: movedown 2s
+  -webkit-animation-iteration-count: 1
+  animation: movedown 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+@keyframes movedown
+  from
+    top: 0px
+  to
+    top: 200px
+
+@-webkit-keyframes movedown
+  from
+    top: 200px
+  to
+    top: 300px
+
+.dashboard-img
+  background: url(/images/dashboard.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 990px
+  height: 648px
+  left: 48px
+  top: 51px
+
+.screenshot-img
+  background: url(/images/screenshot-bg.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 1088px
+  height: 720px
+  left: 0
+  top: 0
+
+.applied-img
+  background: url(/images/applied.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 260px
+  height: 531px
+  left: 303px
+  top: 167px
+
+.sean-default
+  background: url(/images/sean-default.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 312px
+  top: 77px
+  opacity: 1
+  -webkit-animation: fadeOut ease-out 0
+  -moz-animation: fadeOut ease-out 0
+  animation: fadeOut ease-out 0
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  animation-duration: 1s
+
+.sean-default-in
+  background: url(/images/sean-default.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 582px
+  bottom: 82px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 2s
+  -moz-animation-duration: 2s
+  animation-duration: 2s
+
+.sean-move
+  background: url(/images/seans-moving.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 312px
+  top: 77px
+  -webkit-animation-name: shine
+  -webkit-animation-duration: 5s
+  animation-duration: 5s
+
+@keyframes movedown
+  0%
+    background-position: top left
+  28%,100%
+    background-position: bottom right
+
+@-webkit-keyframes shine
+  0%
+    background-position: top left
+  28%,100%
+    background-position: bottom right
 
 .features
   padding: 6rem 0 3rem 0
   box-sizing: border-box
+  position: relative
+  background: white
   dl
     margin: 0 0 3rem 0
     padding: 0
