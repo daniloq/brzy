@@ -245,21 +245,25 @@ article, .container
   height: 531px
   left: 312px
   top: 77px
-  -webkit-animation-name: shine
-  -webkit-animation-duration: 5s
-  animation-duration: 5s
+  -webkit-animation: moveup 2s
+  -webkit-animation-iteration-count: 1
+  animation: moveup 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
 
-@keyframes movedown
+@-webkit-keyframes moveup
   0%
-    background-position: top left
-  28%,100%
-    background-position: bottom right
+    -webkit-transform: translate(270px, -90px)
+  100%
+    -webkit-transform: translate(270px, -90px)
 
-@-webkit-keyframes shine
+@keyframes moveup
   0%
-    background-position: top left
-  28%,100%
-    background-position: bottom right
+    transform: translate(270px, -90px)
+  100%
+    transform: translate(270px, -90px)
+
 
 .features
   padding: 6rem 0 3rem 0
