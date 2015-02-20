@@ -125,6 +125,9 @@ article, .container
     margin: 0 0 3rem 0
     padding: 0
     +clearfix
+    +media($tablet)
+      &:nth-of-type(1)
+        margin-bottom: 0
     dd
       color: $medium-gray
       font:
@@ -133,6 +136,8 @@ article, .container
       padding: 0 40px
       +span-columns(4)
       +media($tablet)
+        margin-bottom: 60px
+        text-align: center
         +span-columns(12)
       header
         line-height: 63px
@@ -157,6 +162,8 @@ article, .container
   padding: 6rem 0 0 0
   box-sizing: border-box
   width: 100%
+  +media($tablet)
+    padding: 6em 0
   ul
     font:
       size: 14px
@@ -165,30 +172,58 @@ article, .container
     color: $medium-gray
     list-style: disc
     margin-left: 18px
+    +media($tablet)
+      list-style: none
   &.phone
     +outer-container
+    +media($tablet)
+      padding: 6em 0 0 0
     article, aside
       +span-columns(6)
+      +media($tablet)
+        +span-columns(12)
     article
       padding: 5rem 5rem 0 0
       box-sizing: border-box
+      +media($tablet)
+        padding: 0
+        text-align: center
     aside
       line-height: 0
+      figure
+        text-align: right
+        +media($tablet)
+          text-align: center
+        img
+          height: 50vh
+          +media($tablet)
+            margin-top: 3rem
+            height: 30vh
   &.mac
     border-top: 1px solid $light-gray
     border-bottom: 1px solid $light-gray
     article
       height: 476px
+      +media($tablet)
+        height: auto
       .content
         padding: 5rem 0 0 5rem
         box-sizing: border-box
         +span-columns(6)
         +shift(6)
+        +media($tablet)
+          padding: 0
+          text-align: center
+          +span-columns(12)
+          +shift(0)
     aside
       +clearfix
       img
         position: absolute
         right: 51%
+        +media($tablet)
+          right: auto
+          position: relative
 
 .testimonals
   background: $nude
@@ -262,6 +297,8 @@ article, .container
   color: white
   height: 38rem
   +cover
+  +media($tablet)
+    background-position: 24% 100%
   dl
     margin: 0
     padding: 8rem 0 0 0
