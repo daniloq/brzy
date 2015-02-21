@@ -108,8 +108,17 @@ article, .container
   color: white
   background: $dark-blue
   text-align: center
+  position: relative
   h1
+    position: relative
     margin: 5rem 0 2rem
+    -webkit-animation: fadeleft 1s
+    -webkit-animation-iteration-count: 1
+    animation: fadeleft 1s
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    opacity: 0
   figure
     // margin-bottom: -0.41rem
     position: relative
@@ -120,18 +129,38 @@ article, .container
       left: 0
       right: 0
       margin: 0 auto
-      &.dashboard-img
-        width: 91%
-        left: 2px
-        top: 51px
   input[type="submit"]
     margin-bottom: 5rem
+    position: relative
+    -webkit-animation: fadeleft 1s
+    -webkit-animation-iteration-count: 1
+    animation: fadeleft 1s
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    opacity: 0
+
+@keyframes fadeleft
+  from
+    left: -100px
+    opacity: 0
+  to
+    opacity: 1
+    left: 0px
+
+@-webkit-keyframes fadeleft
+  from
+    opacity: 0
+    left: -100px
+  to
+    opacity: 1
+    left: 0px
 
 .feedback-img
   background: url(/images/feedback-hover.png) no-repeat center center
   background-size: contain
   position: absolute
-  width: 259px
+  width: auto
   height: 531px
   left: 572px
   top: 166px
@@ -182,9 +211,9 @@ article, .container
   left: 0
   width: 100%
   height: 100%
-  width: 990px
+  width: 991px
   height: 648px
-  left: 48px
+  left: 47px
   top: 51px
   opacity: 0
   -webkit-animation: fadeIn ease-in 1
@@ -203,7 +232,7 @@ article, .container
   background: url(/images/dashboard.png) no-repeat center center
   background-size: contain
   position: absolute
-  width: 990px
+  width: 991px
   height: 648px
   left: 48px
   top: 51px
@@ -254,7 +283,7 @@ article, .container
   width: 242px
   height: 531px
   left: 580px
-  bottom: 82px
+  top: -10px
   opacity: 0
   -webkit-animation: fadeIn ease-in 1
   -moz-animation: fadeIn ease-in 1
@@ -273,7 +302,7 @@ article, .container
   width: 242px
   height: 531px
   left: 580px
-  bottom: 76px
+  top: -4px
   opacity: 0
   -webkit-animation: fadeIn ease-in 1
   -moz-animation: fadeIn ease-in 1
