@@ -139,9 +139,9 @@ article, .container
   -webkit-animation: fadeIn ease-in 1
   -moz-animation: fadeIn ease-in 1
   animation: fadeIn ease-in 1
-  -webkit-animation-duration: 3s
-  -moz-animation-duration: 3s
-  animation-duration: 3s
+  -webkit-animation-duration: 2s
+  -moz-animation-duration: 2s
+  animation-duration: 2s
   -webkit-animation-delay: 1s
   animation-delay: 1s
 
@@ -153,7 +153,7 @@ article, .container
   height: 348px
   left: 580px
   top: 212px
-  -webkit-animation: movedown 2s
+  -webkit-animation: movedown 1s
   -webkit-animation-iteration-count: 1
   animation: movedown 1s
   -webkit-animation-fill-mode: forwards
@@ -173,6 +173,31 @@ article, .container
     top: 200px
   to
     top: 300px
+
+.modal-overlay
+  position: absolute
+  background: rgba(0, 0, 0, 0.7)
+  display: block
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  width: 990px
+  height: 648px
+  left: 48px
+  top: 51px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-out 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: .5s
+  -moz-animation-duration: .5s
+  animation-duration: .5s
+  -webkit-animation-delay: 5s
+  animation-delay: 5s
 
 .dashboard-img
   background: url(/images/dashboard.png) no-repeat center center
@@ -241,6 +266,27 @@ article, .container
   -moz-animation-duration: 2s
   animation-duration: 2s
 
+.sean-click
+  background: url(/images/sean-click.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 580px
+  bottom: 76px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.5s
+  -moz-animation-duration: 0.5s
+  animation-duration: 0.5s
+  -webkit-animation-delay: 4s
+  animation-delay: 4s
+
 .sean-move
   background: url(/images/seans-moving.png) no-repeat center center
   background-size: contain
@@ -282,6 +328,43 @@ article, .container
     left: 600px
     top: -50px
     opacity: 0
+
+.modal-pop
+  background: url(/images/sean-modal.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 537px
+  height: 100%
+  left: 272px
+  top: 77px
+  opacity: 0
+  -webkit-animation: up 1s
+  animation: up 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 6s
+  animation-delay: 6s
+
+@-webkit-keyframes up
+  0%
+    left: 272px
+    top: 1000px
+    opacity: 0
+  100%
+    left: 272px
+    top: 77px
+    opacity: 1
+
+@keyframes up
+  0%
+    left: 272px
+    top: 1000px
+    opacity: 0
+  100%
+    left: 272px
+    top: 77px
+    opacity: 1
 
 .features
   padding: 6rem 0 3rem 0
