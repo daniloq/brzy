@@ -136,14 +136,14 @@ article, .container
   left: 572px
   top: 166px
   opacity: 0
-  /* make things invisible upon start
   -webkit-animation: fadeIn ease-in 1
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time
   -moz-animation: fadeIn ease-in 1
   animation: fadeIn ease-in 1
-  -webkit-animation-duration: 1s
-  -moz-animation-duration: 1s
-  animation-duration: 1s
+  -webkit-animation-duration: 3s
+  -moz-animation-duration: 3s
+  animation-duration: 3s
+  -webkit-animation-delay: 1s
+  animation-delay: 1s
 
 .candidates-img
   background: url(/images/candidates.png) no-repeat center center
@@ -151,7 +151,7 @@ article, .container
   position: absolute
   width: 244px
   height: 348px
-  left: 582px
+  left: 580px
   top: 212px
   -webkit-animation: movedown 2s
   -webkit-animation-iteration-count: 1
@@ -159,6 +159,8 @@ article, .container
   -webkit-animation-fill-mode: forwards
   -moz-animation-fill-mode: forwards
   animation-fill-mode: forwards
+  -webkit-animation-delay: 2s
+  animation-delay: 2s
 
 @keyframes movedown
   from
@@ -217,6 +219,8 @@ article, .container
   -webkit-animation-duration: 1s
   -moz-animation-duration: 1s
   animation-duration: 1s
+  -webkit-animation-delay: 1s
+  animation-delay: 1s
 
 .sean-default-in
   background: url(/images/sean-default.png) no-repeat center center
@@ -224,7 +228,7 @@ article, .container
   position: absolute
   width: 242px
   height: 531px
-  left: 582px
+  left: 580px
   bottom: 82px
   opacity: 0
   -webkit-animation: fadeIn ease-in 1
@@ -245,25 +249,39 @@ article, .container
   height: 531px
   left: 312px
   top: 77px
-  -webkit-animation: moveup 2s
-  -webkit-animation-iteration-count: 1
-  animation: moveup 1s
+  -webkit-animation: upRight 3s
+  animation: upRight 3s
   -webkit-animation-fill-mode: forwards
   -moz-animation-fill-mode: forwards
   animation-fill-mode: forwards
 
-@-webkit-keyframes moveup
-  0%
-    -webkit-transform: translate(270px, -90px)
+@-webkit-keyframes upRight
+  0%, 30%
+    left: 312px
+    top: 77px
+    opacity: 0
+  50%
+    left: 312px
+    top: 77px
+    opacity: 1
   100%
-    -webkit-transform: translate(270px, -90px)
+    left: 600px
+    top: -50px
+    opacity: 0
 
-@keyframes moveup
-  0%
-    transform: translate(270px, -90px)
+@keyframes upRight
+  0%, 30%
+    left: 312px
+    top: 77px
+    opacity: 0
+  50%
+    left: 312px
+    top: 77px
+    opacity: 1
   100%
-    transform: translate(270px, -90px)
-
+    left: 600px
+    top: -50px
+    opacity: 0
 
 .features
   padding: 6rem 0 3rem 0
@@ -429,6 +447,8 @@ article, .container
     p
       font-size: 14px
       line-height: 22px
+    display: table-cell
+    vertical-align: middle
     +span-columns(9)
     +media($tablet)
       +span-columns(12)
@@ -436,6 +456,7 @@ article, .container
     .button
       width: 100%
       text-align: center
+      margin-top: 20px
     +span-columns(3)
     +media($tablet)
       +span-columns(12)
