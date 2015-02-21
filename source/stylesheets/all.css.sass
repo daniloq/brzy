@@ -112,13 +112,6 @@ article, .container
   h1
     position: relative
     margin: 5rem 0 2rem
-    -webkit-animation: fadeleft 1s
-    -webkit-animation-iteration-count: 1
-    animation: fadeleft 1s
-    -webkit-animation-fill-mode: forwards
-    -moz-animation-fill-mode: forwards
-    animation-fill-mode: forwards
-    opacity: 0
   figure
     // margin-bottom: -0.41rem
     position: relative
@@ -131,30 +124,6 @@ article, .container
       margin: 0 auto
   input[type="submit"]
     margin-bottom: 5rem
-    position: relative
-    -webkit-animation: fadeleft 1s
-    -webkit-animation-iteration-count: 1
-    animation: fadeleft 1s
-    -webkit-animation-fill-mode: forwards
-    -moz-animation-fill-mode: forwards
-    animation-fill-mode: forwards
-    opacity: 0
-
-@keyframes fadeleft
-  from
-    left: -100px
-    opacity: 0
-  to
-    opacity: 1
-    left: 0px
-
-@-webkit-keyframes fadeleft
-  from
-    opacity: 0
-    left: -100px
-  to
-    opacity: 1
-    left: 0px
 
 .feedback-img
   background: url(/images/feedback-hover.png) no-repeat center center
@@ -378,7 +347,7 @@ article, .container
 @-webkit-keyframes up
   0%
     left: 272px
-    top: 1000px
+    top: 200px
     opacity: 0
   100%
     left: 272px
