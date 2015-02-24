@@ -22,22 +22,141 @@
       = image_tag "mobile-hero.png", class: "mobile-hero", style: "display: none"
 
 -# Features Section
-= partial "features"
+%section.features
+  %article
+    %dl
+      %dd
+        %header
+          %i.md.md-filter-hdr.md-3x
+          %h4 Analytics and Reporting
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %dd
+        %header
+          %i.md.md-account-child.md-3x
+          %h4 Sourcing
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %dd
+        %header
+          %i.md.md-today.md-3x
+          %h4 Interview Scheduling
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+    %dl
+      %dd
+        %header
+          %i.md.md-speaker-notes.md-3x
+          %h4 Real-Time Communication
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %dd
+        %header
+          %i.md.md-group-add.md-3x
+          %h4 Unlimited User Accounts
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %dd
+        %header
+          %i.md.md-gesture.md-3x
+          %h4 Track and Rate Candidates
+        Curabitur x leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+
 
 -# Macbook Banner
-= partial "macbook-banner"
+%section.single-feature.mac
+  %aside
+    %figure
+      = image_tag "macbook.svg"
+  %article
+    .content
+      %h3 Post to over 2000+ job boards with a click
+      %p Curabitur quis leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %ul
+        %li Curabitur quis leo ut lectus consectetur
+        %li Curabitur quis leo ut lectus consectetur
+        %li Curabitur quis leo ut lectus consectetur
+
 
 -# Iphone Banner
-= partial "iphone-banner"
+%section.single-feature.phone
+  .container
+    %article
+      %h3 Customizable jobs page
+      %p Curabitur quis leo ut lectus consectetur vehicula. Proin molestie, nunc nec rutrum luctus.
+      %ul
+        %li Curabitur quis leo ut lectus consectetur
+        %li Curabitur quis leo ut lectus consectetur
+        %li Curabitur quis leo ut lectus consectetur
+    %aside
+      %figure
+        = image_tag "iphone.svg"
+
 
 -# Testimonials Section
-= partial "testimonials"
+%section.testimonals
+  %article
+    %h3 What are users say about us
+    %p Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg"
+      %li
+        %span Michael Cera
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg"
+      %li
+        %span Jesscia Hughes
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+    %ul
+      %li
+        = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg"
+      %li
+        %span Kimberly Johnson
+      %li
+        = link_to "@thisIsTwitter", "#"
+      %li
+        Quisque gravida ullamcorper sapien. Nulla mattis porttitor orci, at consequat metus commodo sed. Aenean sed malesuada purus.
+
 
 -# Hiring Section
-= partial "hiring"
+%section.hiring
+  .container
+    %article
+      %h5 We’re hiring. Help us reinvent how modern businesses grow amazing teams.
+      %p
+        Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet.
+        %br
+        Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium
+    %aside
+      = link_to "Apply", "#", class: "button secondary"
+
 
 -# Hero Section
-= partial "hero"
+%section.hero
+  .overlay
+    %article
+      %dl
+        %dd
+          %h3 Some new headline
+          %p Curabitur sit amet laoreet orci. Curabitur sollicitudin quam at justo luctus, vel aliquam mauris aliquet. Quisque tempus sollicitudin nisl quis ullamcorper. Etiam convallis elementum metus ut pretium. Duis aliquet, ex eu scelerisque sodales, eros metus sollicitudin mi, quis accumsan diam ante in nisl. Aliquam vel velit quis mauris accumsan pulvinar.
+          = link_to "Get Start", "#", class: "button"
+
 
 -# Footer
-= partial "footer"
+%footer.footer
+  %article
+    %ul
+      %li
+        %a{href: "https://angel.co/nimble-hr", target: "_blank"}
+          = image_tag "icon-angelist.svg"
+      %li
+        %a{href: "https://www.facebook.com/nimblehr", target: "_blank"}
+          = image_tag "icon-fb.svg"
+      %li
+        %a{href: "https://twitter.com/nimble_hr", target: "_blank"}
+          = image_tag "icon-twitter.svg"
+    %p &#169; 2015 Nimble Hr.
