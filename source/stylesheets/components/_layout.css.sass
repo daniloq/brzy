@@ -1,0 +1,292 @@
+br
+  // +media($tablet)
+  //   display: none
+
+article, .container
+  max-width: 68em
+  margin: 0 auto
+
+.main-hero
+  color: white
+  background: $dark-blue
+  text-align: center
+  position: relative
+  h1
+    margin: 5rem 0 2rem
+  form
+    +clearfix
+  figure
+    // margin-bottom: -0.41rem
+    +row
+    position: relative
+    height: 65vh
+    margin: 0 auto
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+  input[type="submit"]
+    margin-bottom: 5rem
+
+.sean-default
+  background: url(/images/sean-default.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 312px
+  top: 77px
+  opacity: 1
+  -webkit-animation: fadeOut ease-out 0
+  -moz-animation: fadeOut ease-out 0
+  animation: fadeOut ease-out 0
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-delay: 1s
+  animation-delay: 1s
+
+.feedback-img
+  background: url(/images/feedback-hover.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 100%
+  height: 531px
+  left: 148px
+  top: 167px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-duration: 2s
+  -moz-animation-duration: 2s
+  animation-duration: 2s
+  -webkit-animation-delay: 1s
+  animation-delay: 1s
+
+.sean-default-in
+  background: url(/images/sean-default.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 583px
+  top: -10px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 2s
+  -moz-animation-duration: 2s
+  animation-duration: 2s
+
+.candidates-img
+  background: url(/images/candidates.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 244px
+  height: 348px
+  left: 581px
+  top: 212px
+  -webkit-animation: movedown 1s
+  -webkit-animation-iteration-count: 1
+  animation: movedown 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 2s
+  animation-delay: 2s
+
+.sean-move
+  background: url(/images/seans-moving.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 312px
+  top: 77px
+  -webkit-animation: upRight 3s
+  animation: upRight 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+.sean-click
+  background: url(/images/sean-click.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 242px
+  height: 531px
+  left: 580px
+  top: -4px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-in 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.5s
+  -moz-animation-duration: 0.5s
+  animation-duration: 0.5s
+  -webkit-animation-delay: 4s
+  animation-delay: 4s
+
+.modal-overlay
+  position: absolute
+  background: rgba(0, 0, 0, 0.7)
+  display: block
+  top: 0
+  left: 0
+  width: 991px
+  height: 648px
+  left: 49px
+  top: 51px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1
+  -moz-animation: fadeIn ease-out 1
+  animation: fadeIn ease-in 1
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: .5s
+  -moz-animation-duration: .5s
+  animation-duration: .5s
+  -webkit-animation-delay: 5s
+  animation-delay: 5s
+
+.modal-pop
+  background: url(/images/sean-modal.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 537px
+  height: 100%
+  left: 272px
+  top: 77px
+  opacity: 0
+  -webkit-animation: up 1s
+  animation: up 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 5s
+  animation-delay: 5s
+
+.dashboard-img
+  background: url(/images/dashboard.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 991px
+  height: 648px
+  left: 48px
+  top: 51px
+
+.screenshot-img
+  background: url(/images/screenshot-bg.png) no-repeat center center
+  background-size: contain
+  position: absolute
+  width: 1088px
+  height: 720px
+  left: 0
+  top: 0
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes movedown
+  from
+    top: 0px
+  to
+    top: 200px
+
+@-webkit-keyframes movedown
+  from
+    top: 200px
+  to
+    top: 300px
+
+@-webkit-keyframes upRight
+  0%, 30%
+    left: 312px
+    top: 77px
+    opacity: 0
+  50%
+    left: 312px
+    top: 77px
+    opacity: 1
+  100%
+    left: 600px
+    top: -50px
+    opacity: 0
+
+@keyframes upRight
+  0%, 30%
+    left: 312px
+    top: 77px
+    opacity: 0
+  50%
+    left: 312px
+    top: 77px
+    opacity: 1
+  100%
+    left: 600px
+    top: -50px
+    opacity: 0
+
+@-webkit-keyframes up
+  0%
+    left: 272px
+    top: 200px
+    opacity: 0
+  100%
+    left: 272px
+    top: 77px
+    opacity: 1
+
+@keyframes up
+  0%
+    left: 272px
+    top: 1000px
+    opacity: 0
+  100%
+    left: 272px
+    top: 77px
+    opacity: 1
+
+
+@media (max-width: 960px)
+  .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop
+    display: none
+  .mobile-hero
+    display: block !important
+    position: relative !important
+    width: 100%
+  .main-hero
+    article
+      padding: 0 1rem
+    figure
+      height: auto
+  .overlay
+    background: rgba(0,0,0,0)
+    height: 100%
+    position: relative
+    top: 0
+    bottom: 0
+    +clearfix
+    background: rgba(0,0,0,0.3)

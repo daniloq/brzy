@@ -1,0 +1,14 @@
+%section.error
+  %header
+    .logo
+      = image_tag "images/nimble.svg"
+  %aside
+    %h1 404
+    %span Oops!
+    %p
+      Looks like that page
+      %br
+      doesn't exist.
+    = link_to "/", class: "button" do
+      Back to Homepage
+    = image_tag "images/error-bg.png"

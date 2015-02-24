@@ -1,4 +1,4 @@
-dar// Font Family
+// Font Family
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700)
 
 // Colors
@@ -26,12 +26,11 @@ $nude: #DFDFD5
   -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10)
   box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10)
 
-@mixin vertical-align
-  position: relative
-  top: 50%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
+@mixin clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
 
 @mixin faded
   opacity: 0
@@ -44,3 +43,21 @@ $nude: #DFDFD5
   -webkit-animation-duration: .5s
   -moz-animation-duration: .5s
   animation-duration: .5s
+
+@mixin ease-out
+  -webkit-transition: all 0.3s ease-out
+  -moz-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  transition: all 0.3s ease-out
+
+*
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+  +ease-out
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Nunito', sans-serif
+  font-size: 16px
+  color: $medium-gray
