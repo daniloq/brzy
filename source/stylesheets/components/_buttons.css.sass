@@ -1,0 +1,32 @@
+.button, input[type="submit"]
+  background-color: #8ABF7B
+  border-radius: 5px
+  border-color: #72b260
+  border-width: 1px 1px 3px
+  border-style: solid
+  color: white
+  display: inline-block
+  font-size: 18px
+  font-weight: 700
+  line-height: 1
+  padding: 1rem 2.438rem
+  text-decoration: none
+  outline: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  -o-appearance: none
+  appearance: none
+  cursor: pointer
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  +ease-out
+  &:hover
+    background-color: #81ba71
+  &.secondary
+    background-color: $blue
+    border-color: $dark-blue
+    &:hover
+      background-color: darken($blue, 5%)
+      color: white

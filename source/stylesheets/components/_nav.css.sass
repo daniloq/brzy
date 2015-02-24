@@ -1,0 +1,46 @@
+.main-nav
+  padding-top: 1.875rem
+  box-sizing: border-box
+  margin: 0 auto
+  +clearfix
+  a
+    color: rgba(255,255,255,0.8)
+    text-transform: uppercase
+    display: inline-block
+    font-size: 0.9rem
+    &.btn
+      background-color: rgba(255,255,255,0.2)
+      display: block
+      padding: 0.15rem 0.8rem
+      border-radius: 6px
+      &:hover
+        background-color: rgba(255,255,255,0.4)
+    &:hover
+      color: white
+  dl
+    margin: 0
+    +row
+    padding: 0
+  dd
+    margin: 0
+    padding: 0
+    +column(6)
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    float: right
+    li
+      display: inline-block
+      margin-left: 2rem
+
+.logo
+  width: 6.25rem
+
+@media (max-width: 960px)
+  .main-nav
+    dl
+      padding: 0 1rem
+    ul
+      li
+        margin-left: 0.5rem

@@ -1,0 +1,37 @@
+.error
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: red
+  header
+    text-align: center
+    .logo
+      margin: 30px auto
+  aside
+    max-width: 400px
+    margin: 10% auto 0 auto
+    position: relative
+    text-align: center
+    +clearfix
+    h1, span, p, a
+      position: relative
+      z-index: 2
+      color: white
+    h1
+      font-size: 90px
+      margin: 0
+      padding-top: 80px
+      line-height: normal
+    span
+      display: block
+      font-size: 30px
+      color: darken($red, 10%)
+    p
+      margin-bottom: 30px
+    img
+      max-width: 400px
+      position: absolute
+      top: 0
+      left: 0

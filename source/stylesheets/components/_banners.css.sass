@@ -1,0 +1,58 @@
+.hiring
+  padding: 4rem 0
+  background: $dark-gray
+  .container
+    +clearfix
+  article
+    vertical-align: middle
+    +column(9)
+    h5
+      margin: 0 0 20px 0
+    p
+      font-size: 14px
+      line-height: 22px
+  aside
+    .button
+      width: 100%
+      text-align: center
+      margin-top: 20px
+    +column(3)
+
+.hero
+  background-image: url(../images/girl-tablet.jpg)
+  background-position: top center
+  color: white
+  height: 38rem
+  +cover
+  dl
+    margin: 0
+    padding: 8rem 0 0 0
+    +clearfix
+    dd
+      +column(5)
+      float: right
+  h3
+    margin-bottom: .8rem
+  p
+    font-size: 14px
+    line-height: 22px
+    margin-bottom: 0
+    color: white
+  .button
+    margin-top: 3rem
+    width: 100%
+    text-align: center
+
+@media (max-width: 960px)
+  .hiring
+    padding: 4em 1em
+    article
+      +column(12)
+    aside
+      +column(12)
+  .hero
+    background-position: 24% 100%
+    dl
+      padding: 8em 1em 0 1em
+      dd
+        +column(12)

@@ -1,0 +1,125 @@
+.features
+  article
+    +row
+    margin: 0 auto
+  padding: 6rem 0 3rem 0
+  box-sizing: border-box
+  position: relative
+  background: white
+  +clearfix
+  dl
+    margin: 0 0 3rem 0
+    padding: 0
+    +clearfix
+    dd
+      color: $medium-gray
+      font-weight: 300
+      font-size: 14px
+      padding: 0 40px
+      box-sizing: border-box
+      +column(4)
+      header
+        line-height: 63px
+        h4
+          display: inline-block
+          margin: 0
+        i.md
+          margin-right: 8px
+          &.md-filter-hdr
+            color: $purple
+          &.md-account-child
+            color: $green
+          &.md-today
+            color: $red
+          &.md-speaker-notes
+            color: $blue
+          &.md-group-add
+            color: $yellow
+          &.md-gesture
+            color: $dark-blue
+
+.single-feature
+  padding: 6rem 0 0 0
+  box-sizing: border-box
+  width: 100%
+  +clearfix
+  ul
+    font-size: 14px
+    font-weight: 300
+    line-height: 31px
+    color: $medium-gray
+    list-style: disc
+    margin-left: 18px
+  &.phone
+    margin: 0 auto
+    article, aside
+      +column(6)
+    article
+      padding: 2rem 5rem 0 0
+      box-sizing: border-box
+    aside
+      line-height: 0
+      figure
+        text-align: right
+        margin: 0
+        img
+          height: 50vh
+  &.mac
+    border-top: 1px solid $light-gray
+    border-bottom: 1px solid $light-gray
+    article
+      height: 476px
+      .content
+        +column(6)
+        padding: 2rem 0 0 5rem
+        box-sizing: border-box
+        float: right
+    aside
+      +clearfix
+      img
+        position: absolute
+        right: 51%
+
+@media (max-width: 960px)
+  .features
+    padding: 6em 1em 0 1em
+    dl
+      &:nth-of-type(1)
+        margin-bottom: 0
+      dd
+        +column(12)
+        margin-bottom: 60px
+        text-align: center
+  .single-feature
+    ul
+      list-style: none
+    &.phone
+      padding: 6em 0 0 0
+      .container
+        padding: 0 1em
+      article, aside
+        +column(12)
+      article
+        padding: 0
+        text-align: center
+      aside
+        figure
+          text-align: center
+          img
+            margin-top: 3rem
+            height: 30vh
+    &.mac
+      padding: 6em 1em
+      article
+        height: auto
+        .content
+          padding: 0
+          text-align: center
+          +column(12)
+      aside
+        figure
+          margin: 0
+        img
+          right: auto
+          position: relative
+          max-width: 100%
