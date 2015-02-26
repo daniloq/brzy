@@ -52,18 +52,22 @@
     margin-left: 18px
   &.phone
     margin: 0 auto
-    article, aside
-      +column(6)
+    overflow: hidden
     article
-      padding: 2rem 5rem 0 0
-      box-sizing: border-box
+      height: 476px
+      .content
+        +column(6)
+        padding: 2rem 5rem 0 0
+        box-sizing: border-box
+        float: left
     aside
-      line-height: 0
-      figure
-        text-align: right
-        margin: 0
-        img
-          height: 50vh
+      +clearfix
+      position: relative
+      img
+        position: absolute
+        left: 51%
+        width: 911px
+        bottom: 0
   &.mac
     border-top: 1px solid $light-gray
     border-bottom: 1px solid $light-gray
@@ -79,6 +83,7 @@
       img
         position: absolute
         right: 51%
+        width: 811px
 
 @media (max-width: 960px)
   .features
@@ -95,19 +100,21 @@
       list-style: none
     &.phone
       padding: 6em 0 0 0
-      .container
-        padding: 0 1em
-      article, aside
-        +column(12)
       article
-        padding: 0
-        text-align: center
+        height: auto
+        .content
+          padding: 0
+          text-align: center
+          +column(12)
       aside
         figure
-          text-align: center
-          img
-            margin-top: 3rem
-            height: 30vh
+          margin: 0
+        img
+          left: auto
+          position: relative
+          max-width: 100%
+          margin-top: 40px
+          bottom: -10px
     &.mac
       padding: 6em 1em
       article
