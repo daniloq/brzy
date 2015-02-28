@@ -1,7 +1,18 @@
 %section.main-hero
 
-  -# Marketing Nav
-  = partial "marketing-nav"
+  %nav.main-nav
+    .container
+      %dl
+        %dd
+          .logo
+            = image_tag "nimble.svg"
+        %dd
+          %ul
+            %li
+              %a{href: ""} Login
+            %li
+              %a.btn{href: ""}
+                Signup
 
   %article
     %h1.wow.fadeInLeft
