@@ -85,9 +85,9 @@ article, .container
   height: 348px
   left: 581px
   top: 212px
-  -webkit-animation: movedown 2s
+  -webkit-animation: movedown 1s
   -webkit-animation-iteration-count: 1
-  animation: movedown 2s
+  animation: movedown 1s
   -webkit-animation-fill-mode: forwards
   -moz-animation-fill-mode: forwards
   animation-fill-mode: forwards
@@ -123,8 +123,8 @@ article, .container
   -webkit-animation-fill-mode: forwards
   -moz-animation-fill-mode: forwards
   animation-fill-mode: forwards
-  -webkit-animation-delay: 6s
-  animation-delay: 6s
+  -webkit-animation-delay: 5s
+  animation-delay: 5s
 
 .modal-overlay
   position: absolute
@@ -143,8 +143,8 @@ article, .container
   -webkit-animation-fill-mode: forwards
   -moz-animation-fill-mode: forwards
   animation-fill-mode: forwards
-  -webkit-animation-delay: 7s
-  animation-delay: 7s
+  -webkit-animation-delay: 6s
+  animation-delay: 6s
 
 .modal-pop
   background: url(/images/sean-modal.png) no-repeat center center
@@ -153,7 +153,7 @@ article, .container
   width: 719px
   height: 698px
   left: 180px
-  top: 132px
+  top: 81px
   opacity: 0
   -webkit-animation: up 1s
   animation: up 1s
@@ -162,6 +162,114 @@ article, .container
   animation-fill-mode: forwards
   -webkit-animation-delay: 7s
   animation-delay: 7s
+
+.activity-tab
+  background: url(/images/activity-tab.png) no-repeat center center
+  background-size: cover
+  position: absolute
+  width: 517px
+  height: 529px
+  left: 201px
+  top: 239px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 1s
+  -moz-animation: fadeIn ease-out 1s
+  animation: fadeIn ease-in 1s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 9s
+  animation-delay: 9s
+
+.mention
+  background: url(/images/mention.png) no-repeat center center
+  background-size: cover
+  position: absolute
+  width: 517px
+  height: 529px
+  left: 201px
+  top: 239px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 3s
+  -moz-animation: fadeIn ease-out 3s
+  animation: fadeIn ease-in 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 12s
+  animation-delay: 12s
+
+.text-type
+  background: url(/images/mention2.png) no-repeat center center
+  background-size: cover
+  position: absolute
+  width: 517px
+  height: 529px
+  left: 201px
+  top: 239px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 3s
+  -moz-animation: fadeIn ease-out 3s
+  animation: fadeIn ease-in 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 18s
+  animation-delay: 18s
+
+.text-blank
+  background: url(/images/text-blank.png) no-repeat center center
+  background-size: cover
+  position: absolute
+  width: 517px
+  height: 529px
+  left: 201px
+  top: 239px
+  opacity: 0
+  -webkit-animation: fadeIn ease-in 3s
+  -moz-animation: fadeIn ease-out 3s
+  animation: fadeIn ease-in 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 22s
+  animation-delay: 22s
+
+.message-post
+  background: url(/images/message-post.png) no-repeat center center
+  background-size: 100%
+  position: absolute
+  width: 515px
+  height: 100%
+  left: 199px
+  top: 415px
+  opacity: 0
+  -webkit-animation: fadeup 3s
+  -moz-animation: fadeup 3s
+  animation: fadeup 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 23s
+  animation-delay: 23s
+
+.reply
+  background: url(/images/reply-post.png) no-repeat center center
+  background-size: 100%
+  position: absolute
+  width: 515px
+  height: 100%
+  left: 203px
+  top: 472px
+  opacity: 0
+  -webkit-animation: fadedown 3s
+  -moz-animation: fadedown 3s
+  animation: fadedown 3s
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-delay: 28s
+  animation-delay: 28s
 
 .dashboard-img
   background: url(/images/dashboard.png) no-repeat center center
@@ -254,7 +362,7 @@ article, .container
     top: 1000px
     opacity: 0
   100%
-    top: 132px
+    top: 71px
     opacity: 1
 
 @keyframes up
@@ -262,9 +370,40 @@ article, .container
     top: 1000px
     opacity: 0
   100%
-    top: 132px
+    top: 71px
     opacity: 1
 
+@-webkit-keyframes fadeup
+  0%
+    top: 1000px
+    opacity: 0
+  100%
+    top: 415px
+    opacity: 1
+
+@keyframes fadeup
+  0%
+    top: 1000px
+    opacity: 0
+  100%
+    top: 415px
+    opacity: 1
+
+@-webkit-keyframes fadedown
+  0%
+    top: 450px
+    opacity: 0
+  100%
+    top: 472px
+    opacity: 1
+
+@keyframes fadedown
+  0%
+    top: 450px
+    opacity: 0
+  100%
+    top: 472px
+    opacity: 1
 
 @media (max-width: 960px)
   .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop
