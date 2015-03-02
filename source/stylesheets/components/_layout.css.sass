@@ -357,7 +357,7 @@ article, .container
 
 @-webkit-keyframes up
   0%
-    top: 1000px
+    top: 0px
     opacity: 0
   100%
     top: 71px
@@ -365,7 +365,7 @@ article, .container
 
 @keyframes up
   0%
-    top: 1000px
+    top: 0px
     opacity: 0
   100%
     top: 71px
@@ -578,9 +578,12 @@ article, .container
       opacity: 0
 
 @media (max-width: 888px)
-  .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop
+  .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop, .activity-tab, .mention, .text-type, .text-blank, .message-post, .reply
     display: none
   .mobile-hero
     display: block !important
     position: relative !important
     width: 100%
+  .main-hero
+    figure
+      height: auto
