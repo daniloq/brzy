@@ -130,8 +130,6 @@ article, .container
   position: absolute
   background: rgba(0, 0, 0, 0.7)
   display: block
-  top: 0
-  left: 0
   width: 991px
   height: 648px
   left: 49px
@@ -406,17 +404,11 @@ article, .container
     opacity: 1
 
 @media (max-width: 960px)
-  .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop
-    display: none
-  .mobile-hero
-    display: block !important
-    position: relative !important
-    width: 100%
   .main-hero
     article
       padding: 0 1rem
     figure
-      height: auto
+      height: 45vh
   .overlay
     background: rgba(0,0,0,0)
     height: 100%
@@ -425,3 +417,170 @@ article, .container
     bottom: 0
     +clearfix
     background: rgba(0,0,0,0.3)
+  .sean-default
+    width: 175px
+    height: 431px
+    left: 276px
+    top: 32px
+    opacity: 1
+  .feedback-img
+    width: 190px
+    height: 385px
+    left: 463px
+    top: 122px
+    opacity: 0
+  .sean-default-in
+    width: 175px
+    height: 431px
+    left: 471px
+    top: -31px
+    opacity: 0
+  .candidates-img
+    width: 175px
+    height: 268px
+    left: 471px
+    top: 143px
+  .sean-move
+    width: 174px
+    height: 331px
+    left: 276px
+    top: 77px
+  .sean-click
+    width: 175px
+    height: 331px
+    left: 471px
+    top: 23px
+    opacity: 0
+  .modal-overlay
+    width: 715px
+    height: 448px
+    left: 86px
+    top: 37px
+    opacity: 0
+  .modal-pop
+    width: 519px
+    height: 508px
+    left: 180px
+    top: 81px
+    opacity: 0
+  .activity-tab
+    width: 372px
+    height: 364px
+    left: 194px
+    top: 202px
+    opacity: 0
+  .mention
+    width: 372px
+    height: 370px
+    left: 194px
+    top: 199px
+    opacity: 0
+  .text-type
+    width: 372px
+    height: 348px
+    left: 194px
+    top: 210px
+    opacity: 0
+  .text-blank
+    width: 358px
+    height: 379px
+    left: 200px
+    top: 193px
+    opacity: 0
+  .message-post
+    width: 315px
+    height: 100%
+    left: 199px
+    top: 297px
+    opacity: 0
+  .reply
+    width: 315px
+    height: 100%
+    left: 203px
+    top: 333px
+    opacity: 0
+  .dashboard-img
+    width: 791px
+    height: 468px
+    left: 48px
+    top: 37px
+  .screenshot-img
+    width: 888px
+    height: 520px
+    left: 0
+    top: 0
+  @keyframes movedown
+    from
+      top: 143px
+    to
+      top: 205px
+  @-webkit-keyframes movedown
+    from
+      top: 143px
+    to
+      top: 205px
+  @-webkit-keyframes fadeup
+    0%
+      top: 1000px
+      opacity: 0
+    100%
+      top: 297px
+      opacity: 1
+
+  @keyframes fadeup
+    0%
+      top: 1000px
+      opacity: 0
+    100%
+      top: 297px
+      opacity: 1
+  @-webkit-keyframes fadedown
+    0%
+      top: 300px
+      opacity: 0
+    100%
+      top: 333px
+      opacity: 1
+
+  @keyframes fadedown
+    0%
+      top: 300px
+      opacity: 0
+    100%
+      top: 333px
+      opacity: 1
+  @-webkit-keyframes upRight
+    0%, 30%
+      left: 276px
+      top: 77px
+      opacity: 0
+    50%
+      left: 276px
+      top: 77px
+      opacity: 1
+    100%
+      left: 480px
+      top: -40px
+      opacity: 0
+
+  @keyframes upRight
+    0%, 30%
+      left: 276px
+      top: 75px
+      opacity: 0
+    50%
+      left: 276px
+      top: 77px
+      opacity: 1
+    100%
+      left: 480px
+      top: -40px
+      opacity: 0
+
+@media (max-width: 888px)
+  .screenshot-img, .dashboard-img, .feedback-img, .sean-default, .sean-default-in, .candidates-img, .sean-move, .sean-click, .modal-overlay, .modal-pop
+    display: none
+  .mobile-hero
+    display: block !important
+    position: relative !important
+    width: 100%
