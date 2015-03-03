@@ -35,6 +35,39 @@ p
 a
   text-decoration: none
 
+small
+  font:
+    size: 10px
+    weight: 300
+
+.content
+  header
+    text-align: center
+    margin-bottom: 45px
+    background: $dark-blue
+    padding: 0 0 60px 0
+    box-sizing: border-box
+    h1
+      font:
+        weight: 300
+      color: white
+      margin-bottom: 0
+    small
+      color: white
+  article
+    +column(6)
+    float: none
+    display: block
+    margin: 0 auto
+    padding: 0 0 60px 0
+    p, ol > li
+      font:
+        size: 14px
+        weight: 200
+    ol > li
+      margin-bottom: 15px
+      line-height: 31px
+
 @media (max-width: 960px)
   h1
     font-size: 2em
