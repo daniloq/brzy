@@ -1,3 +1,7 @@
+%section.alert
+  %span Nimble HR is now Breezy HR.
+  = link_to "Learn more", "#modal", id: "modal-btn"
+
 %section.main-hero
 
   %nav.main-nav
@@ -45,7 +49,7 @@
     %dl
       %dd
         %header
-          %i.md.md-phonelink.md-3x
+          %i.md.md-phone-iphone.md-3x
           %h4 Mobile Optimized
         Both your hiring team and candidates will love our mobile optimized experience.
       %dd
@@ -55,7 +59,7 @@
         No more painful data entry. Uploaded resumes are parsed using the best tech available.
       %dd
         %header
-          %i.md.md-content-paste.md-3x
+          %i.md.md-cast-connected.md-3x
           %h4 Post Job Boards
         Post your open positions on hundreds of free and premium job boards.
     %dl
@@ -191,3 +195,14 @@
       %li
         %a{href: "https://twitter.com/nimble_hr", target: "_blank"}
           = image_tag "icon-twitter.svg"
+
+-# Modal
+#modal{style: "display:none"}
+  %section.modal
+    .center
+      %i.md.md-mood.md-3x
+    %h5 Nimble HR is now Breezy HR
+    %p Sed tempor mi ut ligula convallis blandit. In in viverra leo, ut sollicitudin orci. Suspendisse rhoncus id mi nec vehicula. Aenean tincidunt mollis urna pretium pretium. Donec porta nibh vitae nunc luctus, sit amet ullamcorper arcu eleifend. In mollis quam nibh, et condimentum dolor elementum vitae. Nulla iaculis posuere sem non dictum. Nam in sem sollicitudin, congue mauris congue, volutpat nisi. Donec tincidunt dui id mauris imperdiet tristique.
+
+    = link_to "#", class: "modal-close" do
+      %i.md.md-clear.md-2x

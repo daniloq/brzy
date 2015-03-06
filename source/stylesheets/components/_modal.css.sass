@@ -1,0 +1,59 @@
+.alert
+	background: $blue
+	color: white
+	text-align: center
+	padding: 10px 0
+	box-sizing: border-box
+	a
+		color: rgba(255,255,255,0.7)
+		+ease-out
+		&:hover
+			color: white
+
+#lean_overlay
+	position: fixed
+	z-index: 100
+	top: 0px
+	left: 0px
+	height: 100%
+	width: 100%
+	background: #000
+	display: none
+
+.modal
+	width: 600px
+	padding: 60px 45px
+	box-sizing: border-box
+	background: #FFF
+	border-radius: 2px
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7)
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7)
+	-moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7)
+	position: relative
+	.center
+		width: 100%
+		text-align: center
+	.md-mood
+		color: $yellow
+		margin-bottom: 30px
+	h5
+		margin: 0 0 30px 0
+		font:
+			size: 22px
+			weight: 400
+		color: $dark-gray
+		text-align: center
+	p
+		color: $medium-gray
+		font:
+			size: 16px
+		padding: 0
+		margin: 0
+	.modal-close
+		position: absolute
+		top: 20px
+		right: 20px
+		color: rgba(0,0,0,0.4)
+		+ease-out
+		&:hover
+			color: $red
